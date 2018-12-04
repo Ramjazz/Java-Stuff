@@ -1,0 +1,31 @@
+
+public class Die
+{
+    private int rollOfDie;
+    public void roll() 
+    {
+        rollOfDie = (int)(6*Math.random()+1);
+    }
+
+    public int getNumDots()
+    {
+        return rollOfDie;
+
+    }
+    public static void main(String[] args)
+    {
+        Die die = new Die();
+        die.roll();
+        System.out.println(die.getNumDots());
+        die.roll();
+        System.out.println(die.getNumDots());
+        die.roll();
+        System.out.println(die.getNumDots());
+        die.roll();
+        System.out.println(die.getNumDots());
+        die.roll();
+        System.out.println(die.getNumDots());
+        die.roll();
+        System.out.println(die.getNumDots());
+    }
+}
